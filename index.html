@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Journey Together</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading screen -->
+    <div class="loading-screen">
+        <div class="heart-loader"></div>
+        <p>Loading Our Story...</p>
+    </div>
+
+    <!-- Background elements -->
+    <div class="bg-elements">
+        <div class="floating-hearts"></div>
+        <div class="parallax-stars"></div>
+    </div>
+
+    <!-- Navigation dots -->
+    <div class="timeline-navigation">
+        <div class="nav-dot" data-section="beginning"><span class="nav-tooltip">The Beginning</span></div>
+        <div class="nav-dot" data-section="present"><span class="nav-tooltip">Our 10 Months</span></div>
+        <div class="nav-dot" data-section="future-near"><span class="nav-tooltip">10 Months Later</span></div>
+        <div class="nav-dot" data-section="future-far"><span class="nav-tooltip">10 Years Later</span></div>
+    </div>
+
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Header section -->
+        <header class="intro-header">
+            <h1>Our Journey Together</h1>
+            <p>Past, Present & Future</p>
+            <div class="scroll-indicator">
+                <p>Scroll to Explore</p>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </header>
+
+        <!-- Timeline sections -->
+        <main class="timeline">
+            <!-- Beginning section (10 months ago) -->
+            <section id="beginning" class="timeline-section">
+                <div class="time-marker">
+                    <div class="date-bubble">10 Months Ago</div>
+                </div>
+                <div class="content-card left-card">
+                    <div class="card-header">
+                        <h2>When Our Story Began</h2>
+                        <div class="date">October 2024</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="memory-photo" id="first-meeting-photo"></div>
+                        <p class="memory-text">Remember when we first met? I was immediately captivated by your smile and the way you laughed at my terrible jokes. That moment changed everything.</p>
+                        <div class="interactive-element" data-memory="first-text">
+                            <span class="interaction-prompt">Click to reveal our first text</span>
+                            <div class="hidden-content">
+                                <div class="text-message">
+                                    <div class="message-bubble sent">Hey! It was great meeting you today.</div>
+                                    <div class="message-bubble received">I had a great time too! We should definitely hang out again soon 😊</div>
+                                    <div class="message-bubble sent">How about this weekend?</div>
+                                    <div class="message-bubble received">I'd love that!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card right-card">
+                    <div class="card-header">
+                        <h2>Our First Date</h2>
+                        <div class="date">October 2024</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="memory-photo" id="first-date-photo"></div>
+                        <p class="memory-text">I was so nervous that day. I changed my outfit three times! But then I saw you waiting there, and suddenly everything felt right.</p>
+                        <div class="interactive-element" data-memory="first-impression">
+                            <span class="interaction-prompt">What I thought when I first saw you</span>
+                            <div class="hidden-content">
+                                <p class="secret-thought">"Wow... I could get lost in those eyes forever. I think I'm already falling for you."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="animated-milestone">
+                    <div class="milestone-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our First Kiss</h3>
+                    <p>Under the stars, with the city lights below us</p>
+                </div>
+            </section>
+
+            <!-- Present section (10 months) -->
+            <section id="present" class="timeline-section">
+                <div class="time-marker">
+                    <div class="date-bubble highlight-date">Today: 10 Months Together</div>
+                </div>
+                <div class="celebration-banner">
+                    <h2 class="celebration-title">Happy 10th Monthsary!</h2>
+                    <div class="fireworks-container">
+                        <div class="firework"></div>
+                        <div class="firework"></div>
+                        <div class="firework"></div>
+                    </div>
+                </div>
+                
+                <div class="photo-gallery">
+                    <div class="gallery-header">
+                        <h3>10 Special Memories</h3>
+                        <p>Swipe to see our journey</p>
+                    </div>
+                    <div class="gallery-container">
+                        <!-- Add photo placeholders - would be replaced with your actual photos -->
+                        <div class="gallery-item" style="background-image: url('memory1.jpg');">
+                            <div class="memory-caption">Our weekend getaway</div>
+                        </div>
+                        <div class="gallery-item" style="background-image: url('memory2.jpg');">
+                            <div class="memory-caption">That dinner where we couldn't stop laughing</div>
+                        </div>
+                        <!-- Add more gallery items -->
+                    </div>
+                    <div class="gallery-nav">
+                        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                
+                <div class="content-card present-card">
+                    <div class="card-header">
+                        <h2>What I Love About Us Now</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="love-note">
+                            <p>These 10 months have been the best time of my life. Every day with you makes me happier than I ever thought possible.</p>
+                            <p>I love how we've grown together, how you make me laugh until I can't breathe, and how you're the first person I want to talk to every morning.</p>
+                            <p>You're my favorite person, my best friend, and the most beautiful soul I've ever known.</p>
+                        </div>
+                        <div class="interactive-element" data-memory="special-message">
+                            <span class="interaction-prompt">Click for a special message</span>
+                            <div class="hidden-content">
+                                <div class="special-message-container">
+                                    <p class="special-message">I fall more in love with you every day. Thank you for the most amazing 10 months.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Near future section (10 months later) -->
+            <section id="future-near" class="timeline-section">
+                <div class="time-marker">
+                    <div class="date-bubble">10 Months Later</div>
+                </div>
+                <div class="content-card future-card">
+                    <div class="card-header">
+                        <h2>Our Adventures to Come</h2>
+                        <div class="date">August 2026</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="future-vision-container">
+                            <div class="future-scene" id="future-travel">
+                                <div class="scene-overlay">
+                                    <h3>Our First Big Trip Together</h3>
+                                    <p>I can already picture us exploring new cities, trying local foods, and creating memories that will last a lifetime.</p>
+                                </div>
+                            </div>
+                            <div class="future-scene" id="future-home">
+                                <div class="scene-overlay">
+                                    <h3>Building Our Home</h3>
+                                    <p>A place that's truly ours, where we can cook dinner together and fall asleep in each other's arms every night.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bucket-list">
+                            <h3>Our Next 10 Months Bucket List</h3>
+                            <ul>
+                                <li>Watch the sunset at that beach you've always wanted to visit</li>
+                                <li>Take a cooking class together</li>
+                                <li>Go stargazing somewhere far from city lights</li>
+                                <li>Start our photo album</li>
+                                <li>Have a picnic at that spot I've been telling you about</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Far future section (10 years) -->
+            <section id="future-far" class="timeline-section">
+                <div class="time-marker">
+                    <div class="date-bubble">10 Years Later</div>
+                </div>
+                <div class="future-panorama">
+                    <div class="panorama-scene">
+                        <div class="scene-content">
+                            <h2>Our Life Together</h2>
+                            <p>A decade of loving you, growing with you, and building our dreams together...</p>
+                            
+                            <div class="future-vignettes">
+                                <div class="vignette" id="vignette-home">
+                                    <div class="vignette-content">
+                                        <h3>Our Home</h3>
+                                        <p>A cozy place filled with laughter, love, and all the little things that make it ours.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="vignette" id="vignette-travel">
+                                    <div class="vignette-content">
+                                        <h3>Our Adventures</h3>
+                                        <p>A wall filled with photos and mementos from all the places we've explored together.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="vignette" id="vignette-traditions">
+                                    <div class="vignette-content">
+                                        <h3>Our Traditions</h3>
+                                        <p>Special moments we've created that are uniquely ours - Sunday morning pancakes, holiday rituals, and anniversary celebrations.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card future-far-card">
+                    <div class="card-header">
+                        <h2>A Letter to Future Us</h2>
+                    </div>
+                    <div class="card-content">
+                        <div class="future-letter">
+                            <p>Dear Future Us,</p>
+                            <p>As I write this, we're celebrating 10 months together. I wonder what we'll be like after 10 years. I hope we still make each other laugh until our sides hurt. I hope we've had countless adventures, big and small.</p>
+                            <p>I hope we've grown together, supported each other's dreams, and built a beautiful life.</p>
+                            <p>Most of all, I hope you're still my favorite person to talk to, to share my day with, to love.</p>
+                            <p>Here's to the next 10 years and beyond.</p>
+                            <p>With all my love,<br>Me (from 2025)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final section -->
+            <section id="final" class="timeline-section">
+                <div class="final-message">
+                    <h2>I Love You</h2>
+                    <p>Past, Present & Future</p>
+                    <div class="heart-animation"></div>
+                    <p class="signature">Happy 10th Monthsary</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Music controls -->
+    <div class="music-control">
+        <audio id="background-music" loop>
+            <source src="your-special-song.mp3" type="audio/mpeg">
+        </audio>
+        <button id="music-toggle">
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-volume-mute"></i>
+        </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
